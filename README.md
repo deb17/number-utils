@@ -16,9 +16,9 @@ pip install number-utils
 ['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', 
 '__package__', '__path__', '__spec__', 'are_mutually_prime', 'factor_pairs', 'factors', 
 'highest_power', 'is_prime', 'mutually_prime_factor_pairs', 'number_of_divisors', 
-'number_of_factor_pairs', 'number_of_mutually_prime_factor_pairs', 'prime_factorise', 
-'prime_factors', 'prime_over', 'prime_under', 'primes', 'primes_between', 'primes_under', 
-'sum_of_divisors']
+'number_of_factor_pairs', 'number_of_mutually_prime_factor_pairs', 'pairwise_coprime',
+'prime_factorise', 'prime_factors', 'prime_over', 'prime_under', 'primes',
+'primes_between', 'primes_under', 'sum_of_divisors']
 >>>
 >>> # Examples
 >>> from number_utils import is_prime, are_mutually_prime, prime_factorise

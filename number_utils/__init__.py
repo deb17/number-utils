@@ -12,6 +12,7 @@ from number_utils.primes import (  # noqa
     factor_pairs,
     number_of_mutually_prime_factor_pairs,
     are_mutually_prime,
+    pairwise_coprime,
     mutually_prime_factor_pairs,
     sum_of_divisors,
     highest_power

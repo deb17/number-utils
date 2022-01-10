@@ -1,6 +1,7 @@
 import math
 import itertools
 import operator
+from typing import List
 
 
 def is_prime(n):
@@ -190,7 +191,8 @@ def factor_pairs(n):
 
 
 def number_of_mutually_prime_factor_pairs(n):
-    '''Return the number of mutually prime factors of n.
+    '''Return the number of factor pairs of n with no common factor
+    except unity.
 
     Formula: 2^(m - 1) where m is the number of prime factors.
     '''
@@ -211,6 +213,20 @@ def are_mutually_prime(a, b):
     if len(common) == 1:
         return True
     return False
+
+
+def pairwise_coprime(lst: List[int]):
+    '''Checks if the input list of numbers is pairwise coprime.
+
+    Note - All the numbers in the list could be coprime, yet the list
+    may not be pairwise coprime.
+    '''
+
+    for pair in itertools.combinations(lst, 2):
+        if not are_mutually_prime(*pair):
+            return False
+
+    return True
 
 
 def mutually_prime_factor_pairs(n):

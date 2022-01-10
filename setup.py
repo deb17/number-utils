@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='number-utils',
-    version='0.0.1',
+    version='0.0.2',
     author='Debashish Palit',
     author_email='dpalit17@outlook.com',
     description='A library of functions related to prime numbers.',
